@@ -34,6 +34,11 @@ function ageCalculate() {
 
     days += extendedDays;
 
+    while(days>=30){
+        months += 1;
+        days -= 30;
+    }
+
     display(years, months, days);
 }
 
