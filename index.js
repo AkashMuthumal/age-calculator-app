@@ -30,7 +30,7 @@ function ageCalculate() {
     let days = Math.floor((totalMilis - years*year - months*month) / day)
 
     let remainingMilis = totalMilis % year;
-    let extendedDays = remainingMilis / day;
+    let extendedDays = Math.floor(remainingMilis / day);
 
     days += extendedDays;
 
